@@ -1,8 +1,0 @@
-Student Name: Nikita Vyas123
-Number: 9522758625
-Maths Marks: 99
-Science Marks: 99
-Telugu Marks: 99
-Hindi Marks: 99
-Hindi Marks: Possible
-Hindi Marks: Update

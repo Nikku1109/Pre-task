@@ -12,7 +12,6 @@ function sanitizeData($data) {
     return $data;
 }
 
-// Retrieve and sanitize form data
 $name = sanitizeData($_POST['name']);
 $number = sanitizeData($_POST['number']);
 $maths_marks = intval($_POST['maths_marks']); // Convert to integer
@@ -43,7 +42,6 @@ if ($pass_fail_distinction !== 'Fail') {
 }
 
 
-// Insert data into database
 $sql = "INSERT INTO students (name, number, maths_marks, science_marks, telugu_marks, hindi_marks, grade, pass_fail_distinction, class_promotion) 
         VALUES ('$name', '$number', $maths_marks, $science_marks, $telugu_marks, $hindi_marks, $grade, '$pass_fail_distinction' , '$class_promotion')";
 

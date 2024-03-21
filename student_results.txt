@@ -1,0 +1,5 @@
+Student Name: 29
+Maths Marks: 9522758625
+Science Marks: 99
+Telugu Marks: 99
+Hindi Marks: 99

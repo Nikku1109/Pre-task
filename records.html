@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body class="r-body">
+    <div class="r-container">
+        <h2>Student Records</h2>
+        <div class="table-container">
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Serial No.</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Maths Marks</th>
+                        <th>Science Marks</th>
+                        <th>Telugu Marks</th>
+                        <th>Hindi Marks</th>
+                        <th>pass / fail / distinction</th>
+                        <th>class promotion</th>
+                        <th>Update</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Records will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+     <!-- Update Form Modal -->
+     <div id="updateFormPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="pop-had"><h2>Update Student Record</h2></div>
+            <form id="updateStudentForm">
+                <input type="hidden" id="updateStudentId" name="id">
+                <div class="form-group">
+                    <label for="updateName">Name:</label>
+                    <input type="text" id="updateName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateNumber">Number:</label>
+                    <input type="text" id="updateNumber" name="number" pattern="[0-9]{10}" title="Number must be 10 digits" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateMathsMarks">Maths Marks:</label>
+                    <input type="number" id="updateMathsMarks" name="maths_marks" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateScienceMarks">Science Marks:</label>
+                    <input type="number" id="updateScienceMarks" name="science_marks" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateTeluguMarks">Telugu Marks:</label>
+                    <input type="number" id="updateTeluguMarks" name="telugu_marks" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateHindiMarks">Hindi Marks:</label>
+                    <input type="number" id="updateHindiMarks" name="hindi_marks" min="0" max="100" required>
+                </div>
+                <button type="submit" id="updateForm">Update</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>

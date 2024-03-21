@@ -1,0 +1,203 @@
+/* styles.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.form-container {
+    width: 30%;
+}
+.chart-container {
+    width: 65%;
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+.canvas-container {
+    position: relative;
+    width: 100%;
+}
+.legend-container {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.chart-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+canvas {
+    width: 100%;
+    height: auto;
+}
+.legend-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+th{
+    width: 200px;
+}
+tbody{
+    text-align: center;
+}
+
+legend-text {
+    font-size: 14px;
+}
+.view-records-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-records-button:hover {
+    background-color: #61da65;
+}
+.r-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.r-body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.table-container {
+    overflow-x: auto;
+}
+
+#recordsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#recordsTable th,
+#recordsTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#recordsTable th {
+    background-color: #f2f2f2;
+}
+
+#recordsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#recordsTable tbody tr:hover {
+    background-color: #e2e2e2;
+}
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed; /* Position the popup relative to the viewport */
+    top: 20px; /* Adjust this value to set the distance from the top */
+    left: 50%; /* Center the popup horizontally */
+    transform: translateX(-50%); /* Center the popup horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 80%; /* Set the width of the popup */
+    max-width: 600px; /* Limit the maximum width of the popup */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    z-index: 999; /* Ensure the popup appears on top of other elements */
+}
+
+.popup-content {
+    position: relative; /* Ensure the content is positioned relative to the popup */
+}
+
+.close {
+    position: absolute; /* Position the close button relative to the popup */
+    top: 10px; /* Adjust this value to set the distance from the top */
+    right: 10px; /* Adjust this value to set the distance from the right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #fff; /* Set text color */
+    font-size: 20px; /* Set font size */
+}
+.pop-had{
+    background-color: white;
+    padding: 2px 0;
+    margin-bottom: 12px;
+}
+.popup label{
+    color: white;
+}
+.button-container{
+    width: fit-content;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .chart-container {
+        width: 80%;
+    }
+    .legend-container {
+        width: 90%;
+    }
+    .chart-container {
+        overflow-x: scroll;
+    }
+}

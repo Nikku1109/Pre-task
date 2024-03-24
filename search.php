@@ -1,9 +1,9 @@
 <?php
 include 'db_connection.php';
 
-$searchValue = $_POST['name'];
+$NAME = $_POST['name'];
 
-$sql = "SELECT * FROM students WHERE name = '$searchValue'";
+$sql = "SELECT * FROM students WHERE name = '$NAME'";
 
 $result = $conn->query($sql);
 

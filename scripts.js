@@ -1,4 +1,22 @@
 $(document).ready(function() {
+    $('#search-box').submit(function(event){
+        event.preventDefault();
+        let searchValue = $('#search').val();
+        $.ajax({
+            type: 'POST',
+            url: 'search.php',
+            data: { name: searchValue },
+            success: function(response){
+                    var data = JSON.parse(response);
+                    populateTable(data);// Show success/failure message
+            },
+            error: function(xhr, status, error) {
+                console.error('Error searching records:', error);
+            }
+
+            
+        });
+    });
     $('.view-records-button').click(function() {
         // Redirect to records.html page
         window.location.href = 'records.html';

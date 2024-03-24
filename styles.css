@@ -1,3 +1,7 @@
+.form-container img{
+    height: 100px;
+    width: 200px;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -143,31 +147,31 @@ legend-text {
     background-color: #e2e2e2;
 }
 .popup {
-    display: none; 
-    position: fixed; 
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    background-color: rgba(0, 0, 0, 0.5); 
-    width: 80%;
-    max-width: 600px;
-    padding: 20px; 
-    border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    z-index: 999; 
+    display: none; /* Hide the popup by default */
+    position: fixed; /* Position the popup relative to the viewport */
+    top: 20px; /* Adjust this value to set the distance from the top */
+    left: 50%; /* Center the popup horizontally */
+    transform: translateX(-50%); /* Center the popup horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 80%; /* Set the width of the popup */
+    max-width: 600px; /* Limit the maximum width of the popup */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    z-index: 999; /* Ensure the popup appears on top of other elements */
 }
 
 .popup-content {
-    position: relative; 
+    position: relative; /* Ensure the content is positioned relative to the popup */
 }
 
 .close {
-    position: absolute; 
-    top: 10px; 
-    right: 10px; 
-    cursor: pointer; 
-    color: #fff; 
-    font-size: 20px; 
+    position: absolute; /* Position the close button relative to the popup */
+    top: 10px; /* Adjust this value to set the distance from the top */
+    right: 10px; /* Adjust this value to set the distance from the right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #fff; /* Set text color */
+    font-size: 20px; /* Set font size */
 }
 .pop-had{
     background-color: white;
